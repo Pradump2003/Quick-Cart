@@ -15,7 +15,7 @@ function ShoppingProductTile({
           <img
             src={product?.image}
             alt={product?.title}
-            className="w-full h-[300px] object-cover rounded-t-lg"
+            className="w-full h-[300px] object-fill rounded-t-lg"
           />
           {product?.totalStock === 0 ? (
             <Badge className="absolute top-2 left-2 bg-red-500 hover:bg-red-600">
@@ -102,11 +102,11 @@ function ShoppingProductTile({
               <div className="flex items-center gap-2">
                 {product?.salePrice > 0 ? (
                   <span className="line-through text-lg font-semibold text-primary">
-                    ${product?.price}
+                    ₹{product?.price}
                   </span>
                 ) : (
                   <span className="text-lg font-semibold text-primary">
-                    ${product?.price}
+                    ₹{product?.price}
                   </span>
                 )}
 
@@ -126,7 +126,7 @@ function ShoppingProductTile({
 
             {product?.salePrice > 0 && (
               <span className="text-lg font-semibold text-primary">
-                ${product?.salePrice}
+                ₹{product?.salePrice}
               </span>
             )}
           </div>

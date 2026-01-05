@@ -122,7 +122,7 @@ function App() {
           />
           <Route path="paypal-cancel" element={<PaypalCancelPage />} />
         </Route>
-        <Route path="/unauth-page" element={<UnauthPage />} />
+        {/* <Route path="/unauth-page" element={<UnauthPage />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
