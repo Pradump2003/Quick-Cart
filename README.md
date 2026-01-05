@@ -41,7 +41,7 @@ A full-featured e-commerce web application with both **Admin** and **User** view
 1. Clone the repository:
 
    ```bash
-   git clone 
+   git clone https://github.com/Pradump2003/Quick-Cart.git
    ```
 
 2. Navigate to the project directory:
