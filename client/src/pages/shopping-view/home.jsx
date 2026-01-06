@@ -7,16 +7,18 @@ import {
   BabyIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-  CloudLightning,
   Heater,
   Images,
   Shirt,
   ShirtIcon,
   ShoppingBasket,
-  UmbrellaIcon,
   WashingMachine,
   WatchIcon,
+  Footprints,
 } from "lucide-react";
+import { GrRestroomWomen } from "react-icons/gr";
+import { SiNike, SiPuma, SiAdidas, SiZara } from "react-icons/si";
+import { MdStorefront } from "react-icons/md";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -33,19 +35,19 @@ import { getFeatureImages } from "@/store/common-slice";
 
 const categoriesWithIcon = [
   { id: "men", label: "Men", icon: ShirtIcon },
-  { id: "women", label: "Women", icon: CloudLightning },
+  { id: "women", label: "Women", icon: GrRestroomWomen },
   { id: "kids", label: "Kids", icon: BabyIcon },
   { id: "accessories", label: "Accessories", icon: WatchIcon },
-  { id: "footwear", label: "Footwear", icon: UmbrellaIcon },
+  { id: "footwear", label: "Footwear", icon: Footprints },
 ];
 
 const brandsWithIcon = [
-  { id: "nike", label: "Nike", icon: Shirt },
-  { id: "adidas", label: "Adidas", icon: WashingMachine },
-  { id: "puma", label: "Puma", icon: ShoppingBasket },
+  { id: "nike", label: "Nike", icon: SiNike },
+  { id: "adidas", label: "Adidas", icon: SiAdidas  },
+  { id: "puma", label: "Puma", icon: SiPuma  },
   { id: "levi", label: "Levi's", icon: Airplay },
-  { id: "zara", label: "Zara", icon: Images },
-  { id: "h&m", label: "H&M", icon: Heater },
+  { id: "zara", label: "Zara", icon: SiZara  },
+  { id: "h&m", label: "H&M", icon: MdStorefront },
 ];
 function ShoppingHome() {
   const { cartItems } = useSelector((state) => state.shopCart); // fix code to use cartItems from Redux store

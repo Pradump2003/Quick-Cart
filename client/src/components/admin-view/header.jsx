@@ -14,7 +14,7 @@ function AdminHeader({ setOpen }) {
 
   function handleLogout() {
     dispatch(logoutUser());
-    navigate("/login"); // optional redirect after logout
+    navigate("/auth/login"); // optional redirect after logout
   }
 
   return (
