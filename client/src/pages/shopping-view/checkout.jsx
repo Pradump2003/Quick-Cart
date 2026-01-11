@@ -20,7 +20,9 @@ function ShoppingCheckout() {
   console.log(currentSelectedAddress, "cartItems");
 
   // Filter out null/invalid cart items
-  const validCartItems = cartItems?.items?.filter(item => item && item.productId && item.title) || [];
+  const validCartItems =
+    cartItems?.items?.filter((item) => item && item.productId && item.title) ||
+    [];
 
   const totalCartAmount =
     validCartItems.length > 0
@@ -105,9 +107,17 @@ function ShoppingCheckout() {
 
   return (
     <div className="flex flex-col">
-      <div className="relative h-[300px] w-full overflow-hidden">
-        <img src={img} className="h-full w-full object-cover object-center" />
+      <div
+        className="relative w-full overflow-hidden 
+                h-[200px] sm:h-[280px] md:h-[350px] lg:h-[450px]"
+      >
+        <img
+          src={img}
+          alt="banner"
+          className="h-full w-full object-cover object-center"
+        />
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5 p-5">
         <Address
           selectedId={currentSelectedAddress}
@@ -126,8 +136,8 @@ function ShoppingCheckout() {
             </div>
           </div>
           <div className="mt-4 w-full">
-            <Button 
-              onClick={handleInitiatePaypalPayment} 
+            <Button
+              onClick={handleInitiatePaypalPayment}
               className="w-full"
               disabled={isPaymentStart}
             >
