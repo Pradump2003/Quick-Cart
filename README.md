@@ -17,8 +17,7 @@ Quick-Cart provides:
 - Admin dashboard for product and order management
 
 ## 🌐 Live Demo
-
-If you have a deployed demo, add the link here (example): https://ecommerce-75.vercel.app
+https://quick-cart-yvg6.vercel.app
 
 ## 🛠️ Tech Stack
 
