@@ -114,7 +114,7 @@ function ShoppingCheckout() {
         <img
           src={img}
           alt="banner"
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-fill"
         />
       </div>
 
